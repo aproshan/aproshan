@@ -61,6 +61,43 @@
             height: 50px;
             margin: 10px;
         }
+        .cv-container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .cv-header {
+      margin-bottom: 20px;
+    }
+    .cv-header h2 {
+      font-size: 24px;
+      margin: 0;
+    }
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .download-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+    .download-btn:hover {
+      background-color: #0056b3;
+    }
         footer {
             text-align: center;
             padding: 20px;
@@ -82,7 +119,9 @@
     <nav>
         <a href="#portfolio">Portfolio</a>
         <a href="#experience">Experience</a>
+        <a href="#achievements">Achievements</a>
         <a href="#skills">Skills</a>
+        <a href="#cv">CV</a>
         <a href="#contact">Contact</a>
     </nav>
 
@@ -99,7 +138,9 @@
         </div>
         
         <div class="portfolio-item">
-            <!-- You can add more projects here -->
+            <h3>Escape in Space</h3>
+            <img src = "EscapeInSpace" alt= "Escape In Space">
+            <p>In "Escape in Space," you take on the role of a rocket navigating through a cosmic battlefield. Your mission is to evade falling aliens while collecting power-ups to boost your score. The game features an endless runner format, ensuring that the challenge never stops!</p>
         </div>
     </section>
 
@@ -111,6 +152,17 @@
         <h3>Intern at Game Design Plus (1 Month)</h3>
         <p>During my internship at Game Design Plus, I assisted with designing and developing game levels, contributed to game mechanics, and collaborated with a small team using industry-standard tools such as Unreal Engine.</p>
     </section>
+
+    <section id="achievements" style="padding: 50px 20px; background-color: #f4f4f4;">
+    <div style="max-width: 900px; margin: 0 auto; text-align: center; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <h2>Achievements</h2>
+        <div style="text-align: left; margin-top: 20px;">
+            <h3>3rd Place - The Alter Contest #7 - GameJam</h3>
+            <p><strong>Date:</strong> 05/08/2024 to 12/08/2024</p>
+            <p><strong>Description:</strong> Awarded 3rd place in the Alter Contest #7 - GameJam for developing a 2D platformer game that combines puzzle-solving with progression mechanics. The game challenges players to solve intricate puzzles to unlock new levels and advance through the storyline, creating an engaging and immersive experience. This achievement highlights skills in creativity, problem-solving, and delivering under tight deadlines in a competitive environment.</p>
+        </div>
+    </div>
+</section>
 
     <section id="skills">
         <h2>Skills & Tools</h2>
@@ -159,7 +211,18 @@
             <li>Verse (for Fortnite)</li>
         </ul>
     </section>
-
+    
+    <section id="cv">
+    <div class="cv-container">
+        <div class="cv-header">
+            <h2>My CV</h2>
+            <p>Scroll below to view or download.</p>
+        </div>
+        <iframe src="APRoshan.pdf"></iframe>
+        <a href="APRoshan.pdf" class="download-btn" download>Download CV</a>
+    </div>
+</section>
+    
     <section id="contact">
         <h2>Contact Me</h2>
         <p>Feel free to reach out to me for any inquiries, collaborations, or freelance projects!</p>
